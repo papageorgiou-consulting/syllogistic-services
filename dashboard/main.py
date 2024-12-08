@@ -2,13 +2,13 @@ import streamlit as st
 
 
 def calculate_percentage(number):
-    if number <= 10:
+    if number <= 10000:
         return 9
-    elif number <= 20:
+    elif number <= 20000:
         return 22
-    elif number <= 30:
+    elif number <= 30000:
         return 28
-    elif number <= 40:
+    elif number <= 40000:
         return 36
     else:
         return 44
