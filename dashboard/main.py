@@ -37,7 +37,7 @@ def find_segments(number):
 def main():
     st.title("Tax Calculator/Υπολογισμός φόρου")
     number = st.number_input(
-        "Insert an amount", value=None, placeholder="Type a number/Εισάγετε ένα ποσό..."
+        "Insert an amount/Εισάγετε ένα ποσό", value=None, placeholder="Amount/Ποσό..."
     )
 
     col1, col2 = st.columns(2)
