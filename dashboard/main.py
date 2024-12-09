@@ -36,18 +36,18 @@ def find_segments(number):
 
 def main():
     st.title("Tax Calculator")
-
+    st.subtitle("Υπολογισμός φόρου")
     number = st.number_input(
-        "Insert a number", value=None, placeholder="Type a number..."
+        "Insert an amount", value=None, placeholder="Type a number/Εισάγετε ένα ποσό..."
     )
 
     col1, col2 = st.columns(2)
 
     if number:
         segments = find_segments(number)
-        col1.write("Calculated tax")
-        col1.metric("Amount", f"{sum(segments.values())}€")
-        col2.write("Tax breakdown")
+        col1.write("Calculated tax/Υπολογισμένος φόρος")
+        col1.metric("Amount/Ποσό", f"{sum(segments.values())}€")
+        col2.write("Tax breakdown/Ανάλυση φόρου")
         col2.write(segments)
 
 
